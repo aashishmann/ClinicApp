@@ -1,7 +1,9 @@
 package clinic.dto;
 
+import javax.persistence.*;
 import java.sql.Date;
-
+@Entity
+@Table(name="patient_personal")
 public class Patient {
 	
 	private int patientID;
@@ -10,7 +12,7 @@ public class Patient {
 	private String emailID;
 	private String contactNumber;
 	private Date dob;
-	private String address; 
+	private String address;
 
 	public Patient(int patientID, String firstName, String lastName, String emailID, String contactNumber, Date dob,
 			String address) {
@@ -24,6 +26,16 @@ public class Patient {
 	}
 
 	public Patient() {
+	}
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	public int getPatientID() {
+		return patientID;
+	}
+
+	public void setPatientID(int patientID) {
+		this.patientID = patientID;
 	}
 
 	public String getFirstName() {
@@ -74,11 +86,4 @@ public class Patient {
 		this.address = address;
 	}
 
-	public int getPatientID() {
-		return patientID;
-	}
-
-	public void setPatientID(int patientID) {
-		this.patientID = patientID;
-	}
 }

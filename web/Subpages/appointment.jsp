@@ -1,5 +1,5 @@
-<%@page import="Util.Constants"%>
-<%@page import="dto.User"%>
+<%@ page import="clinic.util.Constants" %>
+<%@ page import="clinic.dto.User" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <script type="text/javascript" src="js/clinicAjax/appointment.js"></script>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 		<div class="panel-footer">
-			<button class="btn btn-primary" id="appintment">Give
+			<button class="btn btn-primary" id="appointment">Give
 				Appointment</button>
 			<button class="btn btn-primary" id="appLoad">Load Details</button>
 			<button class="btn btn-default" id="appClear">Clear</button>

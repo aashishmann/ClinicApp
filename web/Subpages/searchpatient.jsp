@@ -1,5 +1,5 @@
-<%@page import="Util.Constants"%>
-<%@page import="dto.User"%>
+<%@page import="clinic.util.Constants"%>
+<%@page import="clinic.dto.User"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
@@ -17,40 +17,40 @@
 			<label class="col-sm-2 control-label">ID</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" placeholder="Patient id"
-					id="spPatientId">
+					id="addPatientId">
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Email</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" placeholder="Patient email"
-					id="spPatientEmail">
+					id="addPatientEmail">
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Name</label>
 			<div class="col-sm-5">
 				<input type="text" class="form-control"
-					placeholder="Patient first name" id="spPatientFName">
+					placeholder="Patient first name" id="addPatientFName">
 			</div>
 			<div class="col-sm-5">
 				<input type="text" class="form-control"
-					placeholder="Patient last name" id="spPatientLName">
+					placeholder="Patient last name" id="addPatientLName">
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Contact</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control"
-					placeholder="Patient contact" id="spPatientContact">
+					placeholder="Patient contact" id="addPatientContact">
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-2">
-				<button class="btn btn-primary" id="spSearch">Search</button>
+				<button class="btn btn-primary" id="addSearch">Search</button>
 			</div>
 			<div class="col-sm-2">
-				<button class="btn btn-default" id="spClear">Clear</button>
+				<button class="btn btn-default" id="addClear">Clear</button>
 			</div>
 		</div>
 	</form>
@@ -58,7 +58,7 @@
 <div class="row" id="spResults">
 	<div id="spResultPanel">
 		<div class="panel-heading">Results</div>
-		<div class="panel-body" id="spResultBody"></div>
+		<div class="panel-body" id="addResultBody"></div>
 	</div>
 </div>
-<div class="alert alert-danger" id="spAlert1"></div>
+<div class="alert alert-danger" id="addAlert1"></div>

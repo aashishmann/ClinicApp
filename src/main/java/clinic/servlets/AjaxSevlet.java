@@ -59,7 +59,7 @@ public class AjaxSevlet extends HttpServlet {
             } else {
                 JSONObject obj = new JSONObject();
                 obj.put("Result", "Fail");
-                obj.put("Reason", "Patient Id shoyld be of type string");
+                obj.put("Reason", "Patient Id should be of type string");
                 writeToClient(response, obj);
             }
         }

@@ -43,10 +43,9 @@ $(document).ready(function () {
         }).done(function (data) {
             $('#spResults').show(500);
             if (data.Result != undefined && data.Result == "Success") {
-                if (data.List == "Empty") {
+                if (data.List == "Empty"    ) {
                     $('#spResultPanel').addClass('panel panel-danger');
-                    $('#spResultBody').html('Sorry no patient record found. Try again or create a new patient record');
-                } else {
+                    $('#spResultBody').html('Sorry no patient record found. Try again or create a new patient reco
                     $('#spResultPanel').addClass('panel panel-default');
                     var jsonObject = {
                         'tableID': 'spResultTable',

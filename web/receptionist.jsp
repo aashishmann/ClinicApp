@@ -1,5 +1,5 @@
-<%@page import="Util.Constants"%>
-<%@page import="dto.User"%>
+<%@ page import="clinic.util.Constants" %>
+<%@ page import="clinic.dto.User" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -28,6 +28,7 @@
 				<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
 				<li><a href="#Appointment" data-toggle="tab">Appointment</a></li>
 				<li><a href="#AddPatient" data-toggle="tab">Add Patient</a></li>
+				<li><a href="#MedicalRecord" data-toggle="tab">MedicalRecord</a></li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="home">HOME</div>
@@ -45,7 +46,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane fade" id="AddPatient">dfdfdsaf</div>
+					<div class="tab-pane fade" id="MedicalRecord">
+						<div class="row">
+							<div class="col-md-6">
+								<div style="padding: 2px;">
+									<br><%@include file="/Subpages/MedicalRecord.jsp"%>
+								</div>
+							</div>
+
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>

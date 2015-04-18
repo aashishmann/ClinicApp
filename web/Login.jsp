@@ -15,12 +15,12 @@
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<form class="well" action="login" method="post">
-					<div class="form-group">
+					<%--<div class="form-group">
 						<label>Clinic ID</label> <input type="text" class="form-control"
 							placeholder="Clinic id" name="clinicID"
 							<%if (request.getAttribute(Constants.CLINICID) != null) {%>
 							value="<%=request.getAttribute(Constants.CLINICID)%><%}%>">
-					</div>
+					</div>--%>
 					<div class="form-group">
 						<label>Email address</label> <input type="text"
 							class="form-control" placeholder="Email" name="email">

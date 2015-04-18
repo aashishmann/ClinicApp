@@ -1,6 +1,8 @@
-<%@page import="Util.RoleURLMapper"%>
-<%@page import="Util.Constants"%>
-<%@page import="dto.User"%>
+
+<%@page import="clinic.util.RoleURLMapper"%>
+<%@page import="clinic.util.Constants"%>
+<%@page import="clinic.dto.User"%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
@@ -42,7 +44,7 @@
 							%>
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"><%=navUser.getUsername()%></span><b class="caret"></b></a>
+						data-toggle="dropdown"><%=navUser.getUsername()%><b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Settings</a></li>
 							<li><a href="#">Logout</a></li>

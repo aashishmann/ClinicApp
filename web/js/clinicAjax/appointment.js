@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#appAlert1').hide();
     $('#appPatientDetails').hide();
-    $('#appintment').prop('disabled', true);
+    $('#appointment').prop('disabled', true);
     var getPatientInfo = function (patientId, callback,
         errCallback) {
         var jsonPatientId = new Object();

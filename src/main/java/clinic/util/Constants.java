@@ -20,7 +20,7 @@ public class Constants {
 		public String toString() {
 			return role;
 		}
-	};
+	}
 
 	public static enum USERATTRIBUTES {
 		USERNAME("username"), USERROLES("roles"), DEFAULTROLE("defaultRole");
@@ -34,7 +34,7 @@ public class Constants {
 		public String toString() {
 			return attribute;
 		}
-	};
+	}
 
 	public static enum PATIENTATTRIBUTES {
 		PATIENTID("patientId"), FIRSTNAME("firstName"), LASTNAME("lastName"), CONTACTNUMBER("contactNumber"), PATIENTEMAIL(
@@ -49,5 +49,5 @@ public class Constants {
 		public String toString() {
 			return attribute;
 		}
-	};
+	}
 }

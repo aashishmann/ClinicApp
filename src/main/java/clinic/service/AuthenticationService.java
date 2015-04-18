@@ -11,13 +11,15 @@ public class AuthenticationService {
 		userMap.put("ojasr@gmail.com", "pass");
 	}
 
-	public boolean AuthenticateUser(String clinicID, String email,
+	/*public boolean AuthenticateUser(String clinicID, String email,
+			String password) {*/
+	public boolean AuthenticateUser(String email,
 			String password) {
 		/*
 		 * TODO
 		 * Call hibernate function
 		 */
-		if (clinicID == null || email == null || password == null) {
+		if (email == null || password == null) {
 			return false;
 		}
 		if (userMap.get(email) == null || !userMap.get(email).equals(password)) {
